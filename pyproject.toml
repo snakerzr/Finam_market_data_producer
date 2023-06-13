@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "Finam_market_data_producer"
+version = "0.1.0"
+description = "Simple producer for rabbit_mq for getting depth of market data with FinamApi"
+authors = ["Alexander Evdokimov <83905079+snakerzr@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+#    {include = "finam_market_data_producer"},
+#    {include = 'FinamPy'}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+#FinamPy = { git = "https://github.com/cia76/FinamPy" }
+pytz = "^2023.3"
+grpcio = "^1.54.2"
+protobuf = "^4.23.2"
+types-protobuf = "^4.23.0.1"
+requests = "^2.31.0"
+pika = "^1.3.2"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
