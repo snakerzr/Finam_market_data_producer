@@ -15,13 +15,16 @@ Specify your finam `TOKEN` in .env file.
 
 ## Docker build
 Create producer image example:
-```
+```commandline
 docker build -t producer:1 -f ./docker/Dockerfile .
 ```
 or force fresh build
-```
+```commandline
 docker build --no-cache -t producer:1 -f ./docker/Dockerfile .
 ```
 
-
+start docker image
+```commandline
+docker run --rm -it --name producer_test -e TOKEN=your_finam_token -e RABBIT_MQ_HOST=rabbit_mq_host  producer:1 
+```
 
