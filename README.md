@@ -6,7 +6,7 @@ To test:
 1. run rabbit mq `docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management `
 2. start main.py `python main.py`
 
-For complete cycle consumer (link) and clickhouse is needed.
+For complete cycle [consumer](https://github.com/snakerzr/Finam_market_data_consumer) and clickhouse is needed.
 
 ## .env file
 Specify your finam `TOKEN` in .env file.  
