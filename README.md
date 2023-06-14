@@ -10,7 +10,7 @@ For complete cycle [consumer](https://github.com/snakerzr/Finam_market_data_cons
 
 ## .env file
 Specify your finam `TOKEN` in .env file.  
-`CLIENT_IDS` is not nessecary now.  
+`CLIENT_IDS` is not necessary now.  
 `RABBIT_MQ_HOST` = localhost if starting rabbitmq container locally.
 
 ## Docker build
